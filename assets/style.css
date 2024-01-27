@@ -1,0 +1,180 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 
+.attribution { 
+     font-size: 11px;
+     text-align: center; 
+     display: flex;
+     justify-content: center;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+} */
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    position: relative;   
+}
+
+  
+
+.container {
+    max-width:1220px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+} 
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+     padding: 1rem;
+    
+}
+
+
+
+.menu {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    right: 35px;
+    transition: ease-in 0.3s;
+    outline: 1px olivedrab solid;
+    display: block;
+   
+}
+
+.x {
+    position: absolute;
+    cursor: pointer;
+    display: flex; 
+    width: 100%;
+    /* right: -100px; */
+    left: 400px;
+    /* justify-content:center ; */
+    align-self: center;
+    z-index: 1;
+    display: none;
+}
+
+
+
+.navbar{
+    position: absolute;
+    /* height: 70vh; */
+    width: 70%;
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    bottom: 0;
+    background: wheat;
+    padding: 2rem;
+    transition: ease-in 0.3s;
+}  
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    gap: 3rem;
+    /* outline: 1px solid red; */
+    margin-top: 7rem;
+}
+
+.navbar ul li {
+    list-style: none;
+    text-align: left;
+
+}
+
+
+.navbar li a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+   
+}
+
+.navbar a:hover {
+    color: hsl(5, 85%, 63%);
+    transition: ease 0.3s;
+}
+
+
+/* Toggle */
+  
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+@media (min-width:700px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .navbar {
+        display: block;
+        position: static;
+        top: 0;
+        background-color: #fff;
+        padding: 0;
+       
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-top: 0;
+    }
+
+    .navbar ul li {
+        padding: 1rem;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: hsl(236, 13%, 42%);
+    }
+
+    .navbar a:hover {
+        color: hsl(5, 85%, 63%);
+        transition: ease 0.3s;
+    }
+
+    .overlay {
+        /* display: none; */
+    }
+    
+    .menu img {
+        display: none;
+        position: absolute;
+    }
+
+    .x img {
+        display: none;
+    }
+
+
+}
