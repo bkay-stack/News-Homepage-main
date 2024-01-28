@@ -70,17 +70,22 @@ img {
     display: none;
 }
 
+/* .overlay {
+    position: relative;
+    width: 60%;
+    outline: 1px solid red;
+} */
 
 
 .navbar{
     position: absolute;
-    /* height: 70vh; */
-    width: 70%;
+    /* height: 100%; */
+    width: 60%;
     top: 0;
     /* left: 0; */
     right: 0;
     bottom: 0;
-    background: wheat;
+    background: #fff;
     padding: 2rem;
     transition: ease-in 0.3s;
 }  
@@ -92,7 +97,7 @@ img {
     align-items: left;
     text-align: left;
     gap: 3rem;
-    /* outline: 1px solid red; */
+    /* outline: 1px solid green; */
     margin-top: 7rem;
 }
 

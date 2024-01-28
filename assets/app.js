@@ -8,7 +8,7 @@ const xImg = document.querySelector('.x');
 
 menuBtn.addEventListener('click', () => {  
     navBar.classList.toggle('invisible')
-
+    
    console.log('menu')
 })
 
