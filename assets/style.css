@@ -179,20 +179,38 @@ img {
 
 
 /* Third-showcase */
-.third-showcase {
+.third-showcase-item {
     margin-top: 2rem;
     
 }
 
 
-.flex-left {
+.content-img-items  {
+    margin-top: 3rem;
     display: flex;
+    /* align-items: center; */
 }
 
-.content-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.content-wrap {
+    margin-left: 1rem;
+}
+
+.content-wrap h1 {
+    font-size: 2rem;
+    color: hsl(233, 8%, 79%);
+}
+
+
+
+.content-text-wrap h4 {
+    color: hsl(240, 100%, 5%);
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.content-text-wrap p {
+    color:   hsl(236, 13%, 42%);
+    margin-top: 1rem;
 }
 
 
