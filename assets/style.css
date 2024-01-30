@@ -27,6 +27,7 @@ body {
 .container {
     max-width:1220px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 img {
@@ -52,7 +53,7 @@ img {
     z-index: 1;
     right: 35px;
     transition: ease-in 0.3s;
-    outline: 1px olivedrab solid;
+    /* outline: 1px olivedrab solid; */
     display: block;
    
 }
@@ -119,9 +120,84 @@ img {
     transition: ease 0.3s;
 }
 
+/* First Showcase  */
+.header-main h1 {
+    margin-top: 2rem;
+   color: hsl(240, 100%, 5%);
+}
+
+.header-text p {
+    margin-top: 1rem;
+    color:  hsl(236, 13%, 42%);
+}
+
+.header-btn {
+    margin-top: 1rem;
+    background-color: hsl(5, 85%, 63%);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 7px;
+    cursor: pointer;
+}
+
+/* Second showcase */
+.second-header {
+    background: hsl(240, 100%, 5%);
+    color: #fff;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.second-header-text h1{
+    color: hsl(35, 61%, 66%);
+    font-size: 2rem;
+}
+
+.content-1 h3{
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    color: hsl(38, 17%, 91%);
+}
+
+.content-1 p {
+    color: hsl(236, 13%, 42%);
+    letter-spacing: 1px;
+    margin-top: 0.75rem;
+}
+
+/* Line Img */
+.line-img {
+    /* position: absolute; */
+    margin-top: 2.5rem;
+    width: 100% ;
+    height: 1px;
+    background-color: hsl(236, 13%, 42%);
+    /* outline: 1px solid red; */
+}
+
+
+/* Third-showcase */
+.third-showcase {
+    margin-top: 2rem;
+    
+}
+
+
+.flex-left {
+    display: flex;
+}
+
+.content-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Toggle */
-  
+   
 .visible {
     display: block;
 }
