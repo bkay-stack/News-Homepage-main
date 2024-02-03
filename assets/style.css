@@ -25,9 +25,11 @@ body {
   
 
 .container {
-    max-width:1220px;
+    max-width:1100px;
     margin: 0 auto;
     padding: 1rem;
+    position: relative;
+    /* width: 100%; */
 }
 
 img {
@@ -53,7 +55,6 @@ img {
     z-index: 1;
     right: 35px;
     transition: ease-in 0.3s;
-    /* outline: 1px olivedrab solid; */
     display: block;
    
 }
@@ -63,32 +64,27 @@ img {
     cursor: pointer;
     display: flex; 
     width: 100%;
-    /* right: -100px; */
     left: 400px;
-    /* justify-content:center ; */
     align-self: center;
     z-index: 1;
     display: none;
 }
 
-/* .overlay {
-    position: relative;
-    width: 60%;
-    outline: 1px solid red;
-} */
 
+/* Navabr */
 
 .navbar{
-    position: absolute;
-    /* height: 100%; */
-    width: 60%;
+    position: fixed;
+    width: 80%;
     top: 0;
-    /* left: 0; */
     right: 0;
     bottom: 0;
     background: #fff;
     padding: 2rem;
     transition: ease-in 0.3s;
+     outline: 1px solid green;
+     z-index: 1000;
+     
 }  
 
 .navbar ul {
@@ -98,7 +94,6 @@ img {
     align-items: left;
     text-align: left;
     gap: 3rem;
-    /* outline: 1px solid green; */
     margin-top: 7rem;
 }
 
@@ -175,12 +170,11 @@ img {
 
 /* Line Img */
 .line-img {
-    /* position: absolute; */
     margin-top: 2.5rem;
     width: 100% ;
     height: 1px;
     background-color: hsl(236, 13%, 42%);
-    /* outline: 1px solid red; */
+   
 }
 
 
@@ -220,10 +214,7 @@ img {
 }
 
 /* Third showcase */
-.content-img-items img {
-    /* height: 140px;
-    object-fit:cover; */
-}
+
 
 .content-text-wrap h4:hover {
    color: hsl(5, 85%, 63%);
@@ -241,7 +232,28 @@ img {
     display: none;
 }
 
-@media (min-width:900px) {
+.show {
+    display: block;
+}
+
+/* Overlay cover */
+
+
+.cover  {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(0, 0, 0, 0.8) ;
+}
+
+@media (min-width:1200px) {
+
     .header {
         display: flex;
         justify-content: space-between;
@@ -255,7 +267,8 @@ img {
         top: 0;
         background-color: #fff;
         padding: 0;
-       
+        outline: 1px solid red;
+        /* z-index: ; */
     }
 
     .navbar ul {
@@ -290,6 +303,7 @@ img {
         transition: ease 0.3s;
     }
 
+
     .flex-wrap {
         display: flex;
         transition:all ease-in-out 0.3s;
@@ -316,6 +330,8 @@ img {
         
     }
 
+    
+
     .content-img-items img {
         height: 140px;
         object-fit:cover;
@@ -328,6 +344,7 @@ img {
     .menu img {
         display: none;
         position: absolute;
+        /* z-index: 9999999; */
     }
 
     .x img {
@@ -336,3 +353,8 @@ img {
 
 
 }
+
+
+
+
+
