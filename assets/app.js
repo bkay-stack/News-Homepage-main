@@ -7,14 +7,14 @@ const xImg = document.querySelector('.x');
 
 
 menuBtn.addEventListener('click', () => {  
-    navBar.classList.toggle('invisible')
+    navBar.classList.add('invisible')
+    // navBar.classList.add('x')
     
    console.log('menu')
 })
 
 
-xImg.addEventListener('click', () => {
-    
-   
+xImg.addEventListener('click', () => { 
+    // navBar.classList.toggle('invisible')
     console.log('x')
 })
