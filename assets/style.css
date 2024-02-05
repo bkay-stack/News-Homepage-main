@@ -43,7 +43,7 @@ img {
     position: absolute;
     cursor: pointer;
     z-index: 3000;
-    top: 40px;
+    /* top: 30px; */
     right: 35px;
     transition: ease-in 0.3s;
     display: block;
@@ -53,7 +53,7 @@ img {
 .x img{
     position: absolute;
     cursor: pointer;
-    top: 40px;
+    /* top: 30px; */
     right: 30px;
     display: none;
     z-index: 3000;
