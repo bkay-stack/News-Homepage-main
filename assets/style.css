@@ -51,12 +51,13 @@ img {
 }
 
 .x img{
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     /* top: 30px; */
     right: 30px;
     display: none;
     z-index: 3000;
+    transition: ease-in 0.3s;
     /* outline: 1px solid red; */
 }
 
@@ -248,6 +249,9 @@ img {
         width: 100%;
     }
     
+
+
+
     .navbar {
         display: block;
         position: static;
